@@ -60,6 +60,7 @@ nav:
       - Configuration management: families/config.md
       - News, social & feeds: families/social.md
       - Games: families/games.md
+      - The map itself: families/map.md
   - Ruby gems: gems.md
   - Held, not yet built: reserved.md
 

@@ -1,9 +1,11 @@
 # The pure-Go ecosystem
 
-**287 organisations. 564 public code repositories. No C anywhere.**
+**288 organisations. 565 public code repositories. No C anywhere.**
 
-`go-desktop` holds no library of its own. It is the index: a way to find a
-capability without already knowing which organisation owns it.
+`go-desktop` holds no library. It holds the index — a way to find a capability
+without already knowing which organisation owns it — and
+[the tool](https://github.com/go-desktop/catalog) that generates it, so that no
+number on these pages is typed by hand.
 
 Every library in the map is written in Go and compiled with `CGO_ENABLED=0`. That
 is not a stylistic preference. It is what makes one binary cross-compile to six
@@ -14,7 +16,7 @@ a libc — three things a single cgo dependency takes away permanently.
 
 **One organisation per domain, one repository per capability.** A program that
 needs an ext4 reader takes an ext4 reader, not a storage framework. This is why
-there are 287 organisations rather than a handful of monorepos: the unit of reuse
+there are 288 organisations rather than a handful of monorepos: the unit of reuse
 is the capability, and a capability that lives in its own module can be depended
 on without dragging in the rest of its family.
 
