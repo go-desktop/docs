@@ -1,0 +1,77 @@
+site_name: go-desktop docs
+site_description: A map of one pure-Go ecosystem — 287 organisations and 564 public code repositories that build a desktop, typeset a document, mount a filesystem, boot a machine and run Ruby, all with CGO_ENABLED=0, on six 64-bit architectures, under a single conformance standard.
+site_url: https://go-desktop.github.io/docs/
+repo_url: https://github.com/go-desktop
+repo_name: go-desktop
+edit_uri: ""
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - search.suggest
+  palette:
+    # First entry has no explicit light/dark, so it is the default: follow the system.
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Follow the system
+
+extra:
+  version:
+    provider: mike
+    default: latest
+
+nav:
+  - The ecosystem: index.md
+  - Find a capability: finding.md
+  - What every repository is held to: standards.md
+  - Families:
+      - Desktop & widgets: families/desktop.md
+      - Graphics, images & media: families/graphics.md
+      - Documents, typesetting & fonts: families/docs.md
+      - Markup, templating & text: families/markup.md
+      - Web & transports: families/web.md
+      - Realtime collaboration: families/collab.md
+      - Ruby, in Go: families/ruby.md
+      - CPU, SIMD & numerics: families/numerics.md
+      - Compression, delta & erasure: families/compress.md
+      - Storage, volumes & filesystems: families/storage.md
+      - Firmware, boot & trust: families/boot.md
+      - Packaging & supply chain: families/supply.md
+      - Virtualisation, cloud & network: families/cloud.md
+      - Configuration management: families/config.md
+      - News, social & feeds: families/social.md
+      - Games: families/games.md
+  - Ruby gems: gems.md
+  - Held, not yet built: reserved.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
