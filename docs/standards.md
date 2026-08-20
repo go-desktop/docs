@@ -1,6 +1,6 @@
 # What every repository is held to
 
-The same conformance standard applies across all 287 organisations. That is what
+The same conformance standard applies across every organisation in the map. That is what
 makes them one ecosystem rather than a pile of unrelated modules: a caller can
 assume the same things about any of them without reading its CI configuration.
 
