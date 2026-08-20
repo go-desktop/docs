@@ -1,0 +1,1664 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A map of one pure-Go ecosystem — 287 organisations and 564 public code repositories that build a desktop, typeset a document, mount a filesystem, boot a machine and run Ruby, all with CGO_ENABLED=0, on six 64-bit architectures, under a single conformance standard.">
+      
+      
+      
+        <link rel="canonical" href="https://go-desktop.github.io/docs/0.1/gems/">
+      
+      
+        <link rel="prev" href="../families/games/">
+      
+      
+        <link rel="next" href="../reserved/">
+      
+      
+      <link rel="icon" href="../assets/logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Ruby gems - go-desktop docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ruby-gems-one-organisation-each" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="go-desktop docs" class="md-header__button md-logo" aria-label="go-desktop docs" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            go-desktop docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ruby gems
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Follow the system"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Follow the system" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/go-desktop" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    go-desktop
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="go-desktop docs" class="md-nav__button md-logo" aria-label="go-desktop docs" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    go-desktop docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/go-desktop" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    go-desktop
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The ecosystem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../finding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Find a capability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What every repository is held to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Families
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Families
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/desktop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Desktop & widgets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/graphics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graphics, images & media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documents, typesetting & fonts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/markup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markup, templating & text
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web & transports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/collab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Realtime collaboration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/ruby/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ruby, in Go
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/numerics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CPU, SIMD & numerics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/compress/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compression, delta & erasure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage, volumes & filesystems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/boot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware, boot & trust
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/supply/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Packaging & supply chain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtualisation, cloud & network
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/social/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News, social & feeds
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../families/games/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Games
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Ruby gems
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reserved/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Held, not yet built
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ruby-gems-one-organisation-each">Ruby gems — one organisation each<a class="headerlink" href="#ruby-gems-one-organisation-each" title="Permanent link">&para;</a></h1>
+<p>A Ruby virtual machine is only useful with a library around it, so each gem the
+ecosystem needs is reimplemented in pure Go in its own <code>go-ruby-*</code> organisation:
+the standard library, Rails and its dependencies, the testing stack, the Puppet
+stack, database drivers, serialisation formats and template engines.</p>
+<p>Every one of them is byte-compared against MRI where a byte comparison is
+meaningful — a checksum, a <code>Marshal</code> payload, a formatted number. Where it is not
+(a deflate stream, say, whose output is implementation-defined) the requirement is
+interoperability in both directions instead.</p>
+<p>Two things to know before reaching for one:</p>
+<ul>
+<li><strong>The gem organisation is the Ruby-facing wrapper, not always the engine.</strong> Some
+  are thin shells over an engine that lives in its own non-Ruby organisation — the
+  regexp gem wraps <a href="https://github.com/go-regexp/engine"><code>go-regexp/engine</code></a>, the
+  sass gem wraps <a href="https://github.com/go-scss/scss"><code>go-scss/scss</code></a>. If you are
+  writing Go rather than Ruby, take the engine.</li>
+<li><strong>The repository inside is named after the gem</strong>, not after the organisation:
+  <code>go-ruby-activerecord/activerecord</code>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Gem</th>
+<th>Organisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>aasm</code></td>
+<td><a href="https://github.com/go-ruby-aasm"><code>go-ruby-aasm</code></a></td>
+</tr>
+<tr>
+<td><code>abbrev</code></td>
+<td><a href="https://github.com/go-ruby-abbrev"><code>go-ruby-abbrev</code></a></td>
+</tr>
+<tr>
+<td><code>acme</code></td>
+<td><a href="https://github.com/go-ruby-acme"><code>go-ruby-acme</code></a></td>
+</tr>
+<tr>
+<td><code>actioncable</code></td>
+<td><a href="https://github.com/go-ruby-actioncable"><code>go-ruby-actioncable</code></a></td>
+</tr>
+<tr>
+<td><code>actionmailer</code></td>
+<td><a href="https://github.com/go-ruby-actionmailer"><code>go-ruby-actionmailer</code></a></td>
+</tr>
+<tr>
+<td><code>actionpack</code></td>
+<td><a href="https://github.com/go-ruby-actionpack"><code>go-ruby-actionpack</code></a></td>
+</tr>
+<tr>
+<td><code>actionview</code></td>
+<td><a href="https://github.com/go-ruby-actionview"><code>go-ruby-actionview</code></a></td>
+</tr>
+<tr>
+<td><code>activejob</code></td>
+<td><a href="https://github.com/go-ruby-activejob"><code>go-ruby-activejob</code></a></td>
+</tr>
+<tr>
+<td><code>activeldap</code></td>
+<td><a href="https://github.com/go-ruby-activeldap"><code>go-ruby-activeldap</code></a></td>
+</tr>
+<tr>
+<td><code>activemodel</code></td>
+<td><a href="https://github.com/go-ruby-activemodel"><code>go-ruby-activemodel</code></a></td>
+</tr>
+<tr>
+<td><code>activerecord</code></td>
+<td><a href="https://github.com/go-ruby-activerecord"><code>go-ruby-activerecord</code></a></td>
+</tr>
+<tr>
+<td><code>activestorage</code></td>
+<td><a href="https://github.com/go-ruby-activestorage"><code>go-ruby-activestorage</code></a></td>
+</tr>
+<tr>
+<td><code>activesupport</code></td>
+<td><a href="https://github.com/go-ruby-activesupport"><code>go-ruby-activesupport</code></a></td>
+</tr>
+<tr>
+<td><code>addressable</code></td>
+<td><a href="https://github.com/go-ruby-addressable"><code>go-ruby-addressable</code></a></td>
+</tr>
+<tr>
+<td><code>age</code></td>
+<td><a href="https://github.com/go-ruby-age"><code>go-ruby-age</code></a></td>
+</tr>
+<tr>
+<td><code>arrow</code></td>
+<td><a href="https://github.com/go-ruby-arrow"><code>go-ruby-arrow</code></a></td>
+</tr>
+<tr>
+<td><code>async</code></td>
+<td><a href="https://github.com/go-ruby-async"><code>go-ruby-async</code></a></td>
+</tr>
+<tr>
+<td><code>augeas</code></td>
+<td><a href="https://github.com/go-ruby-augeas"><code>go-ruby-augeas</code></a></td>
+</tr>
+<tr>
+<td><code>base64</code></td>
+<td><a href="https://github.com/go-ruby-base64"><code>go-ruby-base64</code></a></td>
+</tr>
+<tr>
+<td><code>bbolt</code></td>
+<td><a href="https://github.com/go-ruby-bbolt"><code>go-ruby-bbolt</code></a></td>
+</tr>
+<tr>
+<td><code>bcrypt</code></td>
+<td><a href="https://github.com/go-ruby-bcrypt"><code>go-ruby-bcrypt</code></a></td>
+</tr>
+<tr>
+<td><code>benchmark</code></td>
+<td><a href="https://github.com/go-ruby-benchmark"><code>go-ruby-benchmark</code></a></td>
+</tr>
+<tr>
+<td><code>bigdecimal</code></td>
+<td><a href="https://github.com/go-ruby-bigdecimal"><code>go-ruby-bigdecimal</code></a></td>
+</tr>
+<tr>
+<td><code>bleve</code></td>
+<td><a href="https://github.com/go-ruby-bleve"><code>go-ruby-bleve</code></a></td>
+</tr>
+<tr>
+<td><code>builder</code></td>
+<td><a href="https://github.com/go-ruby-builder"><code>go-ruby-builder</code></a></td>
+</tr>
+<tr>
+<td><code>bundler</code></td>
+<td><a href="https://github.com/go-ruby-bundler"><code>go-ruby-bundler</code></a></td>
+</tr>
+<tr>
+<td><code>cancancan</code></td>
+<td><a href="https://github.com/go-ruby-cancancan"><code>go-ruby-cancancan</code></a></td>
+</tr>
+<tr>
+<td><code>capistrano</code></td>
+<td><a href="https://github.com/go-ruby-capistrano"><code>go-ruby-capistrano</code></a></td>
+</tr>
+<tr>
+<td><code>capybara</code></td>
+<td><a href="https://github.com/go-ruby-capybara"><code>go-ruby-capybara</code></a></td>
+</tr>
+<tr>
+<td><code>cgi</code></td>
+<td><a href="https://github.com/go-ruby-cgi"><code>go-ruby-cgi</code></a></td>
+</tr>
+<tr>
+<td><code>chronic</code></td>
+<td><a href="https://github.com/go-ruby-chronic"><code>go-ruby-chronic</code></a></td>
+</tr>
+<tr>
+<td><code>cmath</code></td>
+<td><a href="https://github.com/go-ruby-cmath"><code>go-ruby-cmath</code></a></td>
+</tr>
+<tr>
+<td><code>commonmark</code></td>
+<td><a href="https://github.com/go-ruby-commonmark"><code>go-ruby-commonmark</code></a></td>
+</tr>
+<tr>
+<td><code>complex</code></td>
+<td><a href="https://github.com/go-ruby-complex"><code>go-ruby-complex</code></a></td>
+</tr>
+<tr>
+<td><code>concurrent-ruby</code></td>
+<td><a href="https://github.com/go-ruby-concurrent-ruby"><code>go-ruby-concurrent-ruby</code></a></td>
+</tr>
+<tr>
+<td><code>confd</code></td>
+<td><a href="https://github.com/go-ruby-confd"><code>go-ruby-confd</code></a></td>
+</tr>
+<tr>
+<td><code>connection-pool</code></td>
+<td><a href="https://github.com/go-ruby-connection-pool"><code>go-ruby-connection-pool</code></a></td>
+</tr>
+<tr>
+<td><code>csv</code></td>
+<td><a href="https://github.com/go-ruby-csv"><code>go-ruby-csv</code></a></td>
+</tr>
+<tr>
+<td><code>date</code></td>
+<td><a href="https://github.com/go-ruby-date"><code>go-ruby-date</code></a></td>
+</tr>
+<tr>
+<td><code>deep-merge</code></td>
+<td><a href="https://github.com/go-ruby-deep-merge"><code>go-ruby-deep-merge</code></a></td>
+</tr>
+<tr>
+<td><code>devise</code></td>
+<td><a href="https://github.com/go-ruby-devise"><code>go-ruby-devise</code></a></td>
+</tr>
+<tr>
+<td><code>did-you-mean</code></td>
+<td><a href="https://github.com/go-ruby-did-you-mean"><code>go-ruby-did-you-mean</code></a></td>
+</tr>
+<tr>
+<td><code>digest</code></td>
+<td><a href="https://github.com/go-ruby-digest"><code>go-ruby-digest</code></a></td>
+</tr>
+<tr>
+<td><code>dimail</code></td>
+<td><a href="https://github.com/go-ruby-dimail"><code>go-ruby-dimail</code></a></td>
+</tr>
+<tr>
+<td><code>dotenv</code></td>
+<td><a href="https://github.com/go-ruby-dotenv"><code>go-ruby-dotenv</code></a></td>
+</tr>
+<tr>
+<td><code>dry-struct</code></td>
+<td><a href="https://github.com/go-ruby-dry-struct"><code>go-ruby-dry-struct</code></a></td>
+</tr>
+<tr>
+<td><code>dry-types</code></td>
+<td><a href="https://github.com/go-ruby-dry-types"><code>go-ruby-dry-types</code></a></td>
+</tr>
+<tr>
+<td><code>dry-validation</code></td>
+<td><a href="https://github.com/go-ruby-dry-validation"><code>go-ruby-dry-validation</code></a></td>
+</tr>
+<tr>
+<td><code>erasure</code></td>
+<td><a href="https://github.com/go-ruby-erasure"><code>go-ruby-erasure</code></a></td>
+</tr>
+<tr>
+<td><code>erb</code></td>
+<td><a href="https://github.com/go-ruby-erb"><code>go-ruby-erb</code></a></td>
+</tr>
+<tr>
+<td><code>erubi</code></td>
+<td><a href="https://github.com/go-ruby-erubi"><code>go-ruby-erubi</code></a></td>
+</tr>
+<tr>
+<td><code>etcd</code></td>
+<td><a href="https://github.com/go-ruby-etcd"><code>go-ruby-etcd</code></a></td>
+</tr>
+<tr>
+<td><code>excon</code></td>
+<td><a href="https://github.com/go-ruby-excon"><code>go-ruby-excon</code></a></td>
+</tr>
+<tr>
+<td><code>facter</code></td>
+<td><a href="https://github.com/go-ruby-facter"><code>go-ruby-facter</code></a></td>
+</tr>
+<tr>
+<td><code>factory-bot</code></td>
+<td><a href="https://github.com/go-ruby-factory-bot"><code>go-ruby-factory-bot</code></a></td>
+</tr>
+<tr>
+<td><code>faker</code></td>
+<td><a href="https://github.com/go-ruby-faker"><code>go-ruby-faker</code></a></td>
+</tr>
+<tr>
+<td><code>faraday</code></td>
+<td><a href="https://github.com/go-ruby-faraday"><code>go-ruby-faraday</code></a></td>
+</tr>
+<tr>
+<td><code>fast-gettext</code></td>
+<td><a href="https://github.com/go-ruby-fast-gettext"><code>go-ruby-fast-gettext</code></a></td>
+</tr>
+<tr>
+<td><code>fast-gettext-locale</code></td>
+<td><a href="https://github.com/go-ruby-fast-gettext-locale"><code>go-ruby-fast-gettext-locale</code></a></td>
+</tr>
+<tr>
+<td><code>find</code></td>
+<td><a href="https://github.com/go-ruby-find"><code>go-ruby-find</code></a></td>
+</tr>
+<tr>
+<td><code>format</code></td>
+<td><a href="https://github.com/go-ruby-format"><code>go-ruby-format</code></a></td>
+</tr>
+<tr>
+<td><code>friendly-id</code></td>
+<td><a href="https://github.com/go-ruby-friendly-id"><code>go-ruby-friendly-id</code></a></td>
+</tr>
+<tr>
+<td><code>fsctl</code></td>
+<td><a href="https://github.com/go-ruby-fsctl"><code>go-ruby-fsctl</code></a></td>
+</tr>
+<tr>
+<td><code>getoptlong</code></td>
+<td><a href="https://github.com/go-ruby-getoptlong"><code>go-ruby-getoptlong</code></a></td>
+</tr>
+<tr>
+<td><code>grape</code></td>
+<td><a href="https://github.com/go-ruby-grape"><code>go-ruby-grape</code></a></td>
+</tr>
+<tr>
+<td><code>graphql</code></td>
+<td><a href="https://github.com/go-ruby-graphql"><code>go-ruby-graphql</code></a></td>
+</tr>
+<tr>
+<td><code>grpc</code></td>
+<td><a href="https://github.com/go-ruby-grpc"><code>go-ruby-grpc</code></a></td>
+</tr>
+<tr>
+<td><code>haml</code></td>
+<td><a href="https://github.com/go-ruby-haml"><code>go-ruby-haml</code></a></td>
+</tr>
+<tr>
+<td><code>hanami</code></td>
+<td><a href="https://github.com/go-ruby-hanami"><code>go-ruby-hanami</code></a></td>
+</tr>
+<tr>
+<td><code>hcl2</code></td>
+<td><a href="https://github.com/go-ruby-hcl2"><code>go-ruby-hcl2</code></a></td>
+</tr>
+<tr>
+<td><code>hiera</code></td>
+<td><a href="https://github.com/go-ruby-hiera"><code>go-ruby-hiera</code></a></td>
+</tr>
+<tr>
+<td><code>hiera-eyaml</code></td>
+<td><a href="https://github.com/go-ruby-hiera-eyaml"><code>go-ruby-hiera-eyaml</code></a></td>
+</tr>
+<tr>
+<td><code>hocon</code></td>
+<td><a href="https://github.com/go-ruby-hocon"><code>go-ruby-hocon</code></a></td>
+</tr>
+<tr>
+<td><code>http</code></td>
+<td><a href="https://github.com/go-ruby-http"><code>go-ruby-http</code></a></td>
+</tr>
+<tr>
+<td><code>httparty</code></td>
+<td><a href="https://github.com/go-ruby-httparty"><code>go-ruby-httparty</code></a></td>
+</tr>
+<tr>
+<td><code>i18n</code></td>
+<td><a href="https://github.com/go-ruby-i18n"><code>go-ruby-i18n</code></a></td>
+</tr>
+<tr>
+<td><code>images</code></td>
+<td><a href="https://github.com/go-ruby-images"><code>go-ruby-images</code></a></td>
+</tr>
+<tr>
+<td><code>ipaddr</code></td>
+<td><a href="https://github.com/go-ruby-ipaddr"><code>go-ruby-ipaddr</code></a></td>
+</tr>
+<tr>
+<td><code>irb</code></td>
+<td><a href="https://github.com/go-ruby-irb"><code>go-ruby-irb</code></a></td>
+</tr>
+<tr>
+<td><code>jbuilder</code></td>
+<td><a href="https://github.com/go-ruby-jbuilder"><code>go-ruby-jbuilder</code></a></td>
+</tr>
+<tr>
+<td><code>jekyll</code></td>
+<td><a href="https://github.com/go-ruby-jekyll"><code>go-ruby-jekyll</code></a></td>
+</tr>
+<tr>
+<td><code>json</code></td>
+<td><a href="https://github.com/go-ruby-json"><code>go-ruby-json</code></a></td>
+</tr>
+<tr>
+<td><code>jwt</code></td>
+<td><a href="https://github.com/go-ruby-jwt"><code>go-ruby-jwt</code></a></td>
+</tr>
+<tr>
+<td><code>kafka</code></td>
+<td><a href="https://github.com/go-ruby-kafka"><code>go-ruby-kafka</code></a></td>
+</tr>
+<tr>
+<td><code>kaminari</code></td>
+<td><a href="https://github.com/go-ruby-kaminari"><code>go-ruby-kaminari</code></a></td>
+</tr>
+<tr>
+<td><code>kramdown</code></td>
+<td><a href="https://github.com/go-ruby-kramdown"><code>go-ruby-kramdown</code></a></td>
+</tr>
+<tr>
+<td><code>ldap</code></td>
+<td><a href="https://github.com/go-ruby-ldap"><code>go-ruby-ldap</code></a></td>
+</tr>
+<tr>
+<td><code>liquid</code></td>
+<td><a href="https://github.com/go-ruby-liquid"><code>go-ruby-liquid</code></a></td>
+</tr>
+<tr>
+<td><code>logger</code></td>
+<td><a href="https://github.com/go-ruby-logger"><code>go-ruby-logger</code></a></td>
+</tr>
+<tr>
+<td><code>mail</code></td>
+<td><a href="https://github.com/go-ruby-mail"><code>go-ruby-mail</code></a></td>
+</tr>
+<tr>
+<td><code>marshal</code></td>
+<td><a href="https://github.com/go-ruby-marshal"><code>go-ruby-marshal</code></a></td>
+</tr>
+<tr>
+<td><code>matrix</code></td>
+<td><a href="https://github.com/go-ruby-matrix"><code>go-ruby-matrix</code></a></td>
+</tr>
+<tr>
+<td><code>mime-types</code></td>
+<td><a href="https://github.com/go-ruby-mime-types"><code>go-ruby-mime-types</code></a></td>
+</tr>
+<tr>
+<td><code>minitest</code></td>
+<td><a href="https://github.com/go-ruby-minitest"><code>go-ruby-minitest</code></a></td>
+</tr>
+<tr>
+<td><code>money</code></td>
+<td><a href="https://github.com/go-ruby-money"><code>go-ruby-money</code></a></td>
+</tr>
+<tr>
+<td><code>mongodb</code></td>
+<td><a href="https://github.com/go-ruby-mongodb"><code>go-ruby-mongodb</code></a></td>
+</tr>
+<tr>
+<td><code>msgpack</code></td>
+<td><a href="https://github.com/go-ruby-msgpack"><code>go-ruby-msgpack</code></a></td>
+</tr>
+<tr>
+<td><code>multi-json</code></td>
+<td><a href="https://github.com/go-ruby-multi-json"><code>go-ruby-multi-json</code></a></td>
+</tr>
+<tr>
+<td><code>mustache</code></td>
+<td><a href="https://github.com/go-ruby-mustache"><code>go-ruby-mustache</code></a></td>
+</tr>
+<tr>
+<td><code>mysql</code></td>
+<td><a href="https://github.com/go-ruby-mysql"><code>go-ruby-mysql</code></a></td>
+</tr>
+<tr>
+<td><code>nats</code></td>
+<td><a href="https://github.com/go-ruby-nats"><code>go-ruby-nats</code></a></td>
+</tr>
+<tr>
+<td><code>net-ftp</code></td>
+<td><a href="https://github.com/go-ruby-net-ftp"><code>go-ruby-net-ftp</code></a></td>
+</tr>
+<tr>
+<td><code>net-http</code></td>
+<td><a href="https://github.com/go-ruby-net-http"><code>go-ruby-net-http</code></a></td>
+</tr>
+<tr>
+<td><code>net-imap</code></td>
+<td><a href="https://github.com/go-ruby-net-imap"><code>go-ruby-net-imap</code></a></td>
+</tr>
+<tr>
+<td><code>net-pop</code></td>
+<td><a href="https://github.com/go-ruby-net-pop"><code>go-ruby-net-pop</code></a></td>
+</tr>
+<tr>
+<td><code>net-s3</code></td>
+<td><a href="https://github.com/go-ruby-net-s3"><code>go-ruby-net-s3</code></a></td>
+</tr>
+<tr>
+<td><code>net-sftp</code></td>
+<td><a href="https://github.com/go-ruby-net-sftp"><code>go-ruby-net-sftp</code></a></td>
+</tr>
+<tr>
+<td><code>net-smtp</code></td>
+<td><a href="https://github.com/go-ruby-net-smtp"><code>go-ruby-net-smtp</code></a></td>
+</tr>
+<tr>
+<td><code>nokogiri</code></td>
+<td><a href="https://github.com/go-ruby-nokogiri"><code>go-ruby-nokogiri</code></a></td>
+</tr>
+<tr>
+<td><code>oauth2</code></td>
+<td><a href="https://github.com/go-ruby-oauth2"><code>go-ruby-oauth2</code></a></td>
+</tr>
+<tr>
+<td><code>observer</code></td>
+<td><a href="https://github.com/go-ruby-observer"><code>go-ruby-observer</code></a></td>
+</tr>
+<tr>
+<td><code>oidc</code></td>
+<td><a href="https://github.com/go-ruby-oidc"><code>go-ruby-oidc</code></a></td>
+</tr>
+<tr>
+<td><code>omniauth</code></td>
+<td><a href="https://github.com/go-ruby-omniauth"><code>go-ruby-omniauth</code></a></td>
+</tr>
+<tr>
+<td><code>openbao</code></td>
+<td><a href="https://github.com/go-ruby-openbao"><code>go-ruby-openbao</code></a></td>
+</tr>
+<tr>
+<td><code>openssl</code></td>
+<td><a href="https://github.com/go-ruby-openssl"><code>go-ruby-openssl</code></a></td>
+</tr>
+<tr>
+<td><code>openstack</code></td>
+<td><a href="https://github.com/go-ruby-openstack"><code>go-ruby-openstack</code></a></td>
+</tr>
+<tr>
+<td><code>opentelemetry</code></td>
+<td><a href="https://github.com/go-ruby-opentelemetry"><code>go-ruby-opentelemetry</code></a></td>
+</tr>
+<tr>
+<td><code>opentype</code></td>
+<td><a href="https://github.com/go-ruby-opentype"><code>go-ruby-opentype</code></a></td>
+</tr>
+<tr>
+<td><code>optparse</code></td>
+<td><a href="https://github.com/go-ruby-optparse"><code>go-ruby-optparse</code></a></td>
+</tr>
+<tr>
+<td><code>ostruct</code></td>
+<td><a href="https://github.com/go-ruby-ostruct"><code>go-ruby-ostruct</code></a></td>
+</tr>
+<tr>
+<td><code>pagy</code></td>
+<td><a href="https://github.com/go-ruby-pagy"><code>go-ruby-pagy</code></a></td>
+</tr>
+<tr>
+<td><code>paper-trail</code></td>
+<td><a href="https://github.com/go-ruby-paper-trail"><code>go-ruby-paper-trail</code></a></td>
+</tr>
+<tr>
+<td><code>parquet</code></td>
+<td><a href="https://github.com/go-ruby-parquet"><code>go-ruby-parquet</code></a></td>
+</tr>
+<tr>
+<td><code>parser</code></td>
+<td><a href="https://github.com/go-ruby-parser"><code>go-ruby-parser</code></a></td>
+</tr>
+<tr>
+<td><code>pathname</code></td>
+<td><a href="https://github.com/go-ruby-pathname"><code>go-ruby-pathname</code></a></td>
+</tr>
+<tr>
+<td><code>pg</code></td>
+<td><a href="https://github.com/go-ruby-pg"><code>go-ruby-pg</code></a></td>
+</tr>
+<tr>
+<td><code>prawn</code></td>
+<td><a href="https://github.com/go-ruby-prawn"><code>go-ruby-prawn</code></a></td>
+</tr>
+<tr>
+<td><code>prettyprint</code></td>
+<td><a href="https://github.com/go-ruby-prettyprint"><code>go-ruby-prettyprint</code></a></td>
+</tr>
+<tr>
+<td><code>prime</code></td>
+<td><a href="https://github.com/go-ruby-prime"><code>go-ruby-prime</code></a></td>
+</tr>
+<tr>
+<td><code>protobuf</code></td>
+<td><a href="https://github.com/go-ruby-protobuf"><code>go-ruby-protobuf</code></a></td>
+</tr>
+<tr>
+<td><code>pstore</code></td>
+<td><a href="https://github.com/go-ruby-pstore"><code>go-ruby-pstore</code></a></td>
+</tr>
+<tr>
+<td><code>public-suffix</code></td>
+<td><a href="https://github.com/go-ruby-public-suffix"><code>go-ruby-public-suffix</code></a></td>
+</tr>
+<tr>
+<td><code>puma</code></td>
+<td><a href="https://github.com/go-ruby-puma"><code>go-ruby-puma</code></a></td>
+</tr>
+<tr>
+<td><code>pundit</code></td>
+<td><a href="https://github.com/go-ruby-pundit"><code>go-ruby-pundit</code></a></td>
+</tr>
+<tr>
+<td><code>puppet</code></td>
+<td><a href="https://github.com/go-ruby-puppet"><code>go-ruby-puppet</code></a></td>
+</tr>
+<tr>
+<td><code>puppet-resource-api</code></td>
+<td><a href="https://github.com/go-ruby-puppet-resource-api"><code>go-ruby-puppet-resource-api</code></a></td>
+</tr>
+<tr>
+<td><code>racc</code></td>
+<td><a href="https://github.com/go-ruby-racc"><code>go-ruby-racc</code></a></td>
+</tr>
+<tr>
+<td><code>rack</code></td>
+<td><a href="https://github.com/go-ruby-rack"><code>go-ruby-rack</code></a></td>
+</tr>
+<tr>
+<td><code>rails</code></td>
+<td><a href="https://github.com/go-ruby-rails"><code>go-ruby-rails</code></a></td>
+</tr>
+<tr>
+<td><code>railties</code></td>
+<td><a href="https://github.com/go-ruby-railties"><code>go-ruby-railties</code></a></td>
+</tr>
+<tr>
+<td><code>rake</code></td>
+<td><a href="https://github.com/go-ruby-rake"><code>go-ruby-rake</code></a></td>
+</tr>
+<tr>
+<td><code>ransack</code></td>
+<td><a href="https://github.com/go-ruby-ransack"><code>go-ruby-ransack</code></a></td>
+</tr>
+<tr>
+<td><code>rational</code></td>
+<td><a href="https://github.com/go-ruby-rational"><code>go-ruby-rational</code></a></td>
+</tr>
+<tr>
+<td><code>rdoc</code></td>
+<td><a href="https://github.com/go-ruby-rdoc"><code>go-ruby-rdoc</code></a></td>
+</tr>
+<tr>
+<td><code>reddit</code></td>
+<td><a href="https://github.com/go-ruby-reddit"><code>go-ruby-reddit</code></a></td>
+</tr>
+<tr>
+<td><code>redis</code></td>
+<td><a href="https://github.com/go-ruby-redis"><code>go-ruby-redis</code></a></td>
+</tr>
+<tr>
+<td><code>regexp</code></td>
+<td><a href="https://github.com/go-ruby-regexp"><code>go-ruby-regexp</code></a></td>
+</tr>
+<tr>
+<td><code>reline</code></td>
+<td><a href="https://github.com/go-ruby-reline"><code>go-ruby-reline</code></a></td>
+</tr>
+<tr>
+<td><code>resolv</code></td>
+<td><a href="https://github.com/go-ruby-resolv"><code>go-ruby-resolv</code></a></td>
+</tr>
+<tr>
+<td><code>resque</code></td>
+<td><a href="https://github.com/go-ruby-resque"><code>go-ruby-resque</code></a></td>
+</tr>
+<tr>
+<td><code>rexml</code></td>
+<td><a href="https://github.com/go-ruby-rexml"><code>go-ruby-rexml</code></a></td>
+</tr>
+<tr>
+<td><code>roda</code></td>
+<td><a href="https://github.com/go-ruby-roda"><code>go-ruby-roda</code></a></td>
+</tr>
+<tr>
+<td><code>rolify</code></td>
+<td><a href="https://github.com/go-ruby-rolify"><code>go-ruby-rolify</code></a></td>
+</tr>
+<tr>
+<td><code>rouge</code></td>
+<td><a href="https://github.com/go-ruby-rouge"><code>go-ruby-rouge</code></a></td>
+</tr>
+<tr>
+<td><code>rqrcode</code></td>
+<td><a href="https://github.com/go-ruby-rqrcode"><code>go-ruby-rqrcode</code></a></td>
+</tr>
+<tr>
+<td><code>rspec</code></td>
+<td><a href="https://github.com/go-ruby-rspec"><code>go-ruby-rspec</code></a></td>
+</tr>
+<tr>
+<td><code>rss</code></td>
+<td><a href="https://github.com/go-ruby-rss"><code>go-ruby-rss</code></a></td>
+</tr>
+<tr>
+<td><code>rubocop</code></td>
+<td><a href="https://github.com/go-ruby-rubocop"><code>go-ruby-rubocop</code></a></td>
+</tr>
+<tr>
+<td><code>rubygems</code></td>
+<td><a href="https://github.com/go-ruby-rubygems"><code>go-ruby-rubygems</code></a></td>
+</tr>
+<tr>
+<td><code>saml</code></td>
+<td><a href="https://github.com/go-ruby-saml"><code>go-ruby-saml</code></a></td>
+</tr>
+<tr>
+<td><code>sass</code></td>
+<td><a href="https://github.com/go-ruby-sass"><code>go-ruby-sass</code></a></td>
+</tr>
+<tr>
+<td><code>scanf</code></td>
+<td><a href="https://github.com/go-ruby-scanf"><code>go-ruby-scanf</code></a></td>
+</tr>
+<tr>
+<td><code>securerandom</code></td>
+<td><a href="https://github.com/go-ruby-securerandom"><code>go-ruby-securerandom</code></a></td>
+</tr>
+<tr>
+<td><code>semantic-puppet</code></td>
+<td><a href="https://github.com/go-ruby-semantic-puppet"><code>go-ruby-semantic-puppet</code></a></td>
+</tr>
+<tr>
+<td><code>sequel</code></td>
+<td><a href="https://github.com/go-ruby-sequel"><code>go-ruby-sequel</code></a></td>
+</tr>
+<tr>
+<td><code>set</code></td>
+<td><a href="https://github.com/go-ruby-set"><code>go-ruby-set</code></a></td>
+</tr>
+<tr>
+<td><code>shellwords</code></td>
+<td><a href="https://github.com/go-ruby-shellwords"><code>go-ruby-shellwords</code></a></td>
+</tr>
+<tr>
+<td><code>shrine</code></td>
+<td><a href="https://github.com/go-ruby-shrine"><code>go-ruby-shrine</code></a></td>
+</tr>
+<tr>
+<td><code>sidekiq</code></td>
+<td><a href="https://github.com/go-ruby-sidekiq"><code>go-ruby-sidekiq</code></a></td>
+</tr>
+<tr>
+<td><code>simplecov</code></td>
+<td><a href="https://github.com/go-ruby-simplecov"><code>go-ruby-simplecov</code></a></td>
+</tr>
+<tr>
+<td><code>sinatra</code></td>
+<td><a href="https://github.com/go-ruby-sinatra"><code>go-ruby-sinatra</code></a></td>
+</tr>
+<tr>
+<td><code>slim</code></td>
+<td><a href="https://github.com/go-ruby-slim"><code>go-ruby-slim</code></a></td>
+</tr>
+<tr>
+<td><code>sodium</code></td>
+<td><a href="https://github.com/go-ruby-sodium"><code>go-ruby-sodium</code></a></td>
+</tr>
+<tr>
+<td><code>sqlite3</code></td>
+<td><a href="https://github.com/go-ruby-sqlite3"><code>go-ruby-sqlite3</code></a></td>
+</tr>
+<tr>
+<td><code>stdlib</code></td>
+<td><a href="https://github.com/go-ruby-stdlib"><code>go-ruby-stdlib</code></a></td>
+</tr>
+<tr>
+<td><code>stringio</code></td>
+<td><a href="https://github.com/go-ruby-stringio"><code>go-ruby-stringio</code></a></td>
+</tr>
+<tr>
+<td><code>strscan</code></td>
+<td><a href="https://github.com/go-ruby-strscan"><code>go-ruby-strscan</code></a></td>
+</tr>
+<tr>
+<td><code>syslog</code></td>
+<td><a href="https://github.com/go-ruby-syslog"><code>go-ruby-syslog</code></a></td>
+</tr>
+<tr>
+<td><code>thor</code></td>
+<td><a href="https://github.com/go-ruby-thor"><code>go-ruby-thor</code></a></td>
+</tr>
+<tr>
+<td><code>time</code></td>
+<td><a href="https://github.com/go-ruby-time"><code>go-ruby-time</code></a></td>
+</tr>
+<tr>
+<td><code>timecop</code></td>
+<td><a href="https://github.com/go-ruby-timecop"><code>go-ruby-timecop</code></a></td>
+</tr>
+<tr>
+<td><code>toml</code></td>
+<td><a href="https://github.com/go-ruby-toml"><code>go-ruby-toml</code></a></td>
+</tr>
+<tr>
+<td><code>tsort</code></td>
+<td><a href="https://github.com/go-ruby-tsort"><code>go-ruby-tsort</code></a></td>
+</tr>
+<tr>
+<td><code>typhoeus</code></td>
+<td><a href="https://github.com/go-ruby-typhoeus"><code>go-ruby-typhoeus</code></a></td>
+</tr>
+<tr>
+<td><code>tzinfo</code></td>
+<td><a href="https://github.com/go-ruby-tzinfo"><code>go-ruby-tzinfo</code></a></td>
+</tr>
+<tr>
+<td><code>unicode-normalize</code></td>
+<td><a href="https://github.com/go-ruby-unicode-normalize"><code>go-ruby-unicode-normalize</code></a></td>
+</tr>
+<tr>
+<td><code>uri</code></td>
+<td><a href="https://github.com/go-ruby-uri"><code>go-ruby-uri</code></a></td>
+</tr>
+<tr>
+<td><code>vcr</code></td>
+<td><a href="https://github.com/go-ruby-vcr"><code>go-ruby-vcr</code></a></td>
+</tr>
+<tr>
+<td><code>warden</code></td>
+<td><a href="https://github.com/go-ruby-warden"><code>go-ruby-warden</code></a></td>
+</tr>
+<tr>
+<td><code>webauthn</code></td>
+<td><a href="https://github.com/go-ruby-webauthn"><code>go-ruby-webauthn</code></a></td>
+</tr>
+<tr>
+<td><code>webmock</code></td>
+<td><a href="https://github.com/go-ruby-webmock"><code>go-ruby-webmock</code></a></td>
+</tr>
+<tr>
+<td><code>webrick</code></td>
+<td><a href="https://github.com/go-ruby-webrick"><code>go-ruby-webrick</code></a></td>
+</tr>
+<tr>
+<td><code>xslt</code></td>
+<td><a href="https://github.com/go-ruby-xslt"><code>go-ruby-xslt</code></a></td>
+</tr>
+<tr>
+<td><code>yaml</code></td>
+<td><a href="https://github.com/go-ruby-yaml"><code>go-ruby-yaml</code></a></td>
+</tr>
+<tr>
+<td><code>zeitwerk</code></td>
+<td><a href="https://github.com/go-ruby-zeitwerk"><code>go-ruby-zeitwerk</code></a></td>
+</tr>
+<tr>
+<td><code>zlib</code></td>
+<td><a href="https://github.com/go-ruby-zlib"><code>go-ruby-zlib</code></a></td>
+</tr>
+</tbody>
+</table>
+<p>196 gem organisations, 197 public code repositories.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top", "navigation.instant", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
