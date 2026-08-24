@@ -31,7 +31,7 @@ one organisation over.
 - **[What every repository is held to](standards.md)** — the conformance standard, in full.
 - The 17 families, in the navigation on the left.
 - **[Ruby gems](gems.md)** — the 195 per-gem organisations, alphabetically.
-- **[Held, not yet built](reserved.md)** — reserved names, and the stacks that are not Go.
+- **[Held, not yet built](reserved.md)** — the names that are held but hold nothing.
 
 ## Reading a count
 

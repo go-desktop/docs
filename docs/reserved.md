@@ -19,11 +19,3 @@ a capability is the easiest way to believe a capability exists.
 | [`go-ruby-newsgroups`](https://github.com/go-ruby-newsgroups) | A Ruby-facing wrapper for a social or feed client that already exists in Go. |
 | [`go-ruby-syndication`](https://github.com/go-ruby-syndication) | A Ruby-facing wrapper for a social or feed client that already exists in Go. |
 | [`go-ruby-tiktok`](https://github.com/go-ruby-tiktok) | A Ruby-facing wrapper for a social or feed client that already exists in Go. |
-
-## Not in this map
-
-These are real and maintained; they are simply not part of the Go library
-ecosystem this site maps, and are counted nowhere on it.
-
-| Organisation | What it is |
-| --- | --- |
