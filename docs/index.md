@@ -1,6 +1,6 @@
 # The pure-Go ecosystem
 
-**289 organisations. 571 public code repositories. No C anywhere.**
+**289 organisations. 589 public code repositories. No C anywhere.**
 
 `go-desktop` holds no library. It holds the index — a way to find a capability
 without already knowing which organisation owns it — and
