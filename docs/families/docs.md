@@ -8,8 +8,9 @@ Turning a document into pages: fonts, breaking, shaping, TeX, PDF, and one rich-
 | [`go-typeset`](https://github.com/go-typeset) | 3 | [site](https://go-typeset.github.io/) | — | The typesetting algorithms on their own, with no TeX vocabulary in the API: Knuth-Plass line breaking, Liang hyphenation, the Unicode bidirectional algorithm. |
 | [`go-opentype`](https://github.com/go-opentype) | 3 | [site](https://go-opentype.github.io/) | [docs](https://go-opentype.github.io/docs/) | The font format: TrueType/OpenType parsing and anti-aliased rasterisation, a HarfBuzz-lite complex-text shaper, and legible fonts ready to import. |
 | [`go-synctex`](https://github.com/go-synctex) | 1 | [site](https://go-synctex.github.io/) | [docs](https://go-synctex.github.io/docs/) | TeX's SyncTeX — the source-to-PDF correspondence, both ways. |
-| [`go-pdfkit`](https://github.com/go-pdfkit) | 7 | [site](https://go-pdfkit.github.io/) | [docs](https://go-pdfkit.github.io/docs/) | A PDF 1.7 writer: font subsetting and embedding for TrueType and CFF, graphics, images, shaped text. |
-| [`go-richdoc`](https://github.com/go-richdoc) | 3 | — | — | One rich-document model, and the converters that read and write it. |
+| [`go-pdfkit`](https://github.com/go-pdfkit) | 11 | [site](https://go-pdfkit.github.io/) | [docs](https://go-pdfkit.github.io/docs/) | The PDF stack, both directions: a 1.7 writer with TrueType and CFF subsetting, a reader and renderer, AcroForm fields, text and structure extraction, a conformance suite judged against poppler, and a co-editable reader application built on all of it. |
+| [`go-docutils`](https://github.com/go-docutils) | 1 | — | — | A reStructuredText engine — docutils' core in pure Go: the parser and the doctree it produces, which the LaTeX and PDF path is built on. |
+| [`go-richdoc`](https://github.com/go-richdoc) | 4 | — | — | One rich-document model, and the converters that read and write it — Markdown, LaTeX and reStructuredText. |
 | [`go-odf`](https://github.com/go-odf) | 1 | — | — | OpenDocument Text, in and out of the richdoc model. |
 | [`go-rtf`](https://github.com/go-rtf) | 1 | — | — | RTF, in and out of the richdoc model. |
 

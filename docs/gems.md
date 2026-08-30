@@ -218,4 +218,4 @@ Two things to know before reaching for one:
 | `zeitwerk` | [`go-ruby-zeitwerk`](https://github.com/go-ruby-zeitwerk) |
 | `zlib` | [`go-ruby-zlib`](https://github.com/go-ruby-zlib) |
 
-195 gem organisations, 196 public code repositories.
+195 gem organisations, 195 public code repositories.
