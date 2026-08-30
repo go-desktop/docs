@@ -1,6 +1,6 @@
 # The pure-Go ecosystem
 
-**291 organisations. 610 public code repositories. No C anywhere.**
+**290 organisations. 609 public code repositories. No C anywhere.**
 
 `go-desktop` holds no library. It holds the index — a way to find a capability
 without already knowing which organisation owns it — and
@@ -16,7 +16,7 @@ a libc — three things a single cgo dependency takes away permanently.
 
 **One organisation per domain, one repository per capability.** A program that
 needs an ext4 reader takes an ext4 reader, not a storage framework. This is why
-there are 291 organisations rather than a handful of monorepos: the unit of reuse
+there are 290 organisations rather than a handful of monorepos: the unit of reuse
 is the capability, and a capability that lives in its own module can be depended
 on without dragging in the rest of its family.
 
