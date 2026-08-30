@@ -17,7 +17,8 @@ domain, not in the repository that happens to need it first.
 | Draw into a terminal instead | [`go-widgets/tui`](https://github.com/go-widgets/tui) |
 | Bind state to widgets | [`go-widgets/mvvm`](https://github.com/go-widgets/mvvm) + [`go-widgets/mvvmtk`](https://github.com/go-widgets/mvvmtk) |
 | Theme a UI declaratively | [`go-widgets/skin`](https://github.com/go-widgets/skin) |
-| Put an icon on a button | [`go-iconoir/iconoir`](https://github.com/go-iconoir/iconoir) — never hand-draw one |
+| Put an icon on a button | [`go-icons/iconoir`](https://github.com/go-icons/iconoir) for the glyph, drawn through [`go-gfx/gfx`](https://github.com/go-gfx/gfx)'s `svg` — never hand-draw one |
+| Use a brand logo, a language mark or a file-type icon | [`go-icons`](https://github.com/go-icons) — simple-icons, devicon, material, seti, vscode-icons |
 | Highlight source code in an editor widget | [`go-rouge/rouge`](https://github.com/go-rouge/rouge) via `go-widgets/toolkit/rougelex` |
 | Add a system-tray or menu-bar item | [`go-widgets/tray`](https://github.com/go-widgets/tray) |
 | Animate a widget | `go-widgets/toolkit/anim` |

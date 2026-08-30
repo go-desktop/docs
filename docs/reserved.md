@@ -19,13 +19,3 @@ a capability is the easiest way to believe a capability exists.
 | [`go-ruby-newsgroups`](https://github.com/go-ruby-newsgroups) | A Ruby-facing wrapper for a social or feed client that already exists in Go. |
 | [`go-ruby-syndication`](https://github.com/go-ruby-syndication) | A Ruby-facing wrapper for a social or feed client that already exists in Go. |
 | [`go-ruby-tiktok`](https://github.com/go-ruby-tiktok) | A Ruby-facing wrapper for a social or feed client that already exists in Go. |
-
-## Archived, and where it went
-
-These organisations were built and are now archived. They are listed, rather
-than removed, because a reader who knows the old name has to be able to find
-the new one. They are counted nowhere.
-
-| Organisation | Replaced by |
-| --- | --- |
-| [`go-iconoir`](https://github.com/go-iconoir) | [`go-icons/iconoir`](https://github.com/go-icons/iconoir) for the icon data, and [`go-gfx/gfx`](https://github.com/go-gfx/gfx)'s `svg` package for turning it into pixels. Splitting the two is what made the rasteriser reusable for every other pack rather than only for Iconoir. |
