@@ -1,6 +1,6 @@
 # Configuration management
 
-The Puppet stack, in Go, without a Ruby runtime.
+The Puppet and Ansible stacks, in Go, without a Ruby or Python runtime.
 
 | Organisation | Repos | Site | Docs | What it holds |
 | --- | --- | --- | --- | --- |
@@ -13,6 +13,7 @@ The Puppet stack, in Go, without a Ruby runtime.
 | [`go-eyaml`](https://github.com/go-eyaml) | 1 | [site](https://go-eyaml.github.io/) | [docs](https://go-eyaml.github.io/docs/) | eyaml — encrypted values inside Hiera data. |
 | [`go-hocon`](https://github.com/go-hocon) | 1 | [site](https://go-hocon.github.io/) | [docs](https://go-hocon.github.io/docs/) | HOCON configuration. |
 | [`go-augeas`](https://github.com/go-augeas) | 1 | [site](https://go-augeas.github.io/) | [docs](https://go-augeas.github.io/docs/) | The Augeas engine: a config tree, path expressions and lenses. |
+| [`go-ansible`](https://github.com/go-ansible) | 10 | — | — | Ansible: inventory, variable precedence, Jinja2-compatible templating, connection and become plugins, the module protocol, and the playbook engine. |
 
 Counts are public repositories that hold code; brand, docs and landing
 repositories are excluded.
