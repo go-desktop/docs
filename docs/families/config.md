@@ -14,7 +14,7 @@ The Puppet and Ansible stacks, in Go, without a Ruby or Python runtime.
 | [`go-hocon`](https://github.com/go-hocon) | 1 | [site](https://go-hocon.github.io/) | [docs](https://go-hocon.github.io/docs/) | HOCON configuration. |
 | [`go-augeas`](https://github.com/go-augeas) | 1 | [site](https://go-augeas.github.io/) | [docs](https://go-augeas.github.io/docs/) | The Augeas engine: a config tree, path expressions and lenses. |
 | [`go-ansible`](https://github.com/go-ansible) | 10 | [site](https://go-ansible.github.io/) | [docs](https://go-ansible.github.io/docs/) | Ansible: inventory, variable precedence, Jinja2-compatible templating, connection and become plugins, the module protocol, and the playbook engine. |
-| [`go-remoteexec`](https://github.com/go-remoteexec) | 1 | — | — | The layer both orchestrators run commands through: local, SSH and WinRM connections with sudo, su and doas escalation. |
+| [`go-remoteexec`](https://github.com/go-remoteexec) | 1 | [site](https://go-remoteexec.github.io/) | [docs](https://go-remoteexec.github.io/docs/) | The layer both orchestrators run commands through: local, SSH and WinRM connections with sudo, su and doas escalation. |
 
 Counts are public repositories that hold code; brand, docs and landing
 repositories are excluded.
