@@ -1,4 +1,9 @@
-# Desktop & widgets
+---
+title: "Desktop & widgets"
+weight: 50
+---
+
+# Desktop & widgets {#desktop-widgets}
 
 One widget toolkit, every surface it paints on, and the platform plumbing a real desktop needs.
 

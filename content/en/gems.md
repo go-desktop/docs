@@ -1,4 +1,9 @@
-# Ruby gems — one organisation each
+---
+title: "Ruby gems"
+weight: 220
+---
+
+# Ruby gems — one organisation each {#ruby-gems-one-organisation-each}
 
 A Ruby virtual machine is only useful with a library around it, so each gem the
 ecosystem needs is reimplemented in pure Go in its own `go-ruby-*` organisation:

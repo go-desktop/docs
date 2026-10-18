@@ -1,4 +1,9 @@
-# Storage, volumes & filesystems
+---
+title: "Storage, volumes & filesystems"
+weight: 140
+---
+
+# Storage, volumes & filesystems {#storage-volumes-filesystems}
 
 From a block device to a mounted filesystem, without a C library anywhere.
 

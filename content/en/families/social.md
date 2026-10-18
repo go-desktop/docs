@@ -1,4 +1,9 @@
-# News, social & feeds
+---
+title: "News, social & feeds"
+weight: 190
+---
+
+# News, social & feeds {#news-social-feeds}
 
 One reader, and a client per source it reads.
 

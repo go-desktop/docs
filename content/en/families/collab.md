@@ -1,4 +1,9 @@
-# Realtime collaboration
+---
+title: "Realtime collaboration"
+weight: 100
+---
+
+# Realtime collaboration {#realtime-collaboration}
 
 Many people, one document, no server deciding who won.
 

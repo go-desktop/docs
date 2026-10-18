@@ -1,4 +1,9 @@
-# Ruby, in Go
+---
+title: "Ruby, in Go"
+weight: 110
+---
+
+# Ruby, in Go {#ruby-in-go}
 
 A Ruby virtual machine, its object model, and one organisation per gem it needs.
 
