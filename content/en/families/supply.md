@@ -1,4 +1,9 @@
-# Packaging & supply chain
+---
+title: "Packaging & supply chain"
+weight: 160
+---
+
+# Packaging & supply chain {#packaging-supply-chain}
 
 Building every dependency from source, signing it, and saying where it came from.
 

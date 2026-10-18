@@ -1,4 +1,9 @@
-# Find a capability
+---
+title: "Find a capability"
+weight: 20
+---
+
+# Find a capability {#find-a-capability}
 
 The ecosystem is wide enough that the real risk is not *finding* a library but
 *not knowing it exists* and rebuilding it. This page is the lookup: what you need,
@@ -8,7 +13,7 @@ If what you need is not here, check the family pages before starting — and if 
 genuinely is not in the ecosystem, it belongs in the organisation that owns the
 domain, not in the repository that happens to need it first.
 
-## User interface
+## User interface {#user-interface}
 
 | I need to… | Use |
 | --- | --- |
@@ -24,7 +29,7 @@ domain, not in the repository that happens to need it first.
 | Animate a widget | `go-widgets/toolkit/anim` |
 | Ship an Android APK with a Go-painted UI | [`go-widgets/android`](https://github.com/go-widgets/android) |
 
-## Desktop integration
+## Desktop integration {#desktop-integration}
 
 | I need to… | Use |
 | --- | --- |
@@ -39,7 +44,7 @@ domain, not in the repository that happens to need it first.
 | Call an Objective-C API on macOS | [`go-macos/objc`](https://github.com/go-macos/objc) |
 | Call a Win32 or WinRT API | [`go-mswin/win32`](https://github.com/go-mswin/win32), [`go-mswin/winrt`](https://github.com/go-mswin/winrt) |
 
-## Graphics and text
+## Graphics and text {#graphics-and-text}
 
 | I need to… | Use |
 | --- | --- |
@@ -56,7 +61,7 @@ domain, not in the repository that happens to need it first.
 | Get the `.cls`/`.sty` files a document asks for | [`go-tex/texmf`](https://github.com/go-tex/texmf) |
 | Demux MP4 or Matroska | [`go-avkit/avkit`](https://github.com/go-avkit/avkit) |
 
-## Documents and markup
+## Documents and markup {#documents-and-markup}
 
 | I need to… | Use |
 | --- | --- |
@@ -68,7 +73,7 @@ domain, not in the repository that happens to need it first.
 | Convert between rich document formats | [`go-richdoc/richdoc`](https://github.com/go-richdoc/richdoc) and its converters |
 | Parse a date a human wrote | [`go-datetime/dates`](https://github.com/go-datetime/dates) |
 
-## Storage and filesystems
+## Storage and filesystems {#storage-and-filesystems}
 
 | I need to… | Use |
 | --- | --- |
@@ -85,7 +90,7 @@ domain, not in the repository that happens to need it first.
 | Split a stream into content-defined chunks | [`go-deltasync/chunk`](https://github.com/go-deltasync/chunk) — the one chunker |
 | Erasure-code data | [`go-erasure/reedsolomon`](https://github.com/go-erasure/reedsolomon) |
 
-## Firmware, boot and trust
+## Firmware, boot and trust {#firmware-boot-and-trust}
 
 | I need to… | Use |
 | --- | --- |
@@ -95,7 +100,7 @@ domain, not in the repository that happens to need it first.
 | Link or sign a PE32+/EFI binary | [`go-coff/peln`](https://github.com/go-coff/peln), [`go-coff/pectl`](https://github.com/go-coff/pectl) |
 | Read or patch GRUB or systemd-boot config | [`go-bootloaders`](https://github.com/go-bootloaders) |
 
-## Compute
+## Compute {#compute}
 
 | I need to… | Use |
 | --- | --- |
@@ -104,7 +109,7 @@ domain, not in the repository that happens to need it first.
 | Work with n-dimensional arrays, or multiply matrices | [`go-ndarray/ndarray`](https://github.com/go-ndarray/ndarray) |
 | Take an FFT | [`go-fft/fft`](https://github.com/go-fft/fft) |
 
-## Distributed systems
+## Distributed systems {#distributed-systems}
 
 | I need to… | Use |
 | --- | --- |
@@ -118,7 +123,7 @@ domain, not in the repository that happens to need it first.
 | Drive a guest virtio device | [`go-virtio`](https://github.com/go-virtio) |
 | Run a microVM cloud | [`openweft/weft`](https://github.com/openweft/weft) |
 
-## Packaging and Ruby
+## Packaging and Ruby {#packaging-and-ruby}
 
 | I need to… | Use |
 | --- | --- |
@@ -126,5 +131,5 @@ domain, not in the repository that happens to need it first.
 | Produce an SBOM or sign an artifact | [`go-attest/sbom`](https://github.com/go-attest/sbom), [`go-attest/sign`](https://github.com/go-attest/sign) |
 | Compare loose or CalVer versions | [`go-versions/semver`](https://github.com/go-versions/semver) |
 | Run Ruby code | [`go-embedded-ruby/ruby`](https://github.com/go-embedded-ruby/ruby) (`rbgo`) |
-| Use a specific gem's behaviour from Go | the matching [`go-ruby-*`](gems.md) organisation |
+| Use a specific gem's behaviour from Go | the matching [`go-ruby-*`]({{< relref "gems.md" >}}) organisation |
 | Compile a Puppet catalogue | [`go-puppet/puppet`](https://github.com/go-puppet/puppet) |

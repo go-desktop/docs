@@ -1,4 +1,9 @@
-# CPU, SIMD & numerics
+---
+title: "CPU, SIMD & numerics"
+weight: 120
+---
+
+# CPU, SIMD & numerics {#cpu-simd-numerics}
 
 Getting the machine's width out of pure Go, on all six 64-bit targets.
 

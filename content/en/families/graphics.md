@@ -1,4 +1,9 @@
-# Graphics, images & media
+---
+title: "Graphics, images & media"
+weight: 60
+---
+
+# Graphics, images & media {#graphics-images-media}
 
 The 2D socle everything above draws through, and the pixels and frames it moves.
 

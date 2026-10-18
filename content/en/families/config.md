@@ -1,4 +1,9 @@
-# Configuration management
+---
+title: "Configuration management"
+weight: 180
+---
+
+# Configuration management {#configuration-management}
 
 The Puppet and Ansible stacks, in Go, without a Ruby or Python runtime.
 

@@ -1,4 +1,9 @@
-# Firmware, boot & trust
+---
+title: "Firmware, boot & trust"
+weight: 150
+---
+
+# Firmware, boot & trust {#firmware-boot-trust}
 
 What runs before the kernel, and how you prove what ran.
 

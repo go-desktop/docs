@@ -1,4 +1,9 @@
-# Compression, delta & erasure
+---
+title: "Compression, delta & erasure"
+weight: 130
+---
+
+# Compression, delta & erasure {#compression-delta-erasure}
 
 Making bytes smaller, sending only what changed, and surviving what is lost.
 

@@ -1,4 +1,9 @@
-# Documents, typesetting & fonts
+---
+title: "Documents, typesetting & fonts"
+weight: 70
+---
+
+# Documents, typesetting & fonts {#documents-typesetting-fonts}
 
 Turning a document into pages: fonts, breaking, shaping, TeX, PDF, and one rich-document model.
 

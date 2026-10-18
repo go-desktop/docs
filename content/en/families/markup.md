@@ -1,4 +1,9 @@
-# Markup, templating & text
+---
+title: "Markup, templating & text"
+weight: 80
+---
+
+# Markup, templating & text {#markup-templating-text}
 
 Reading and writing the formats documents arrive in, and the engines that scan them.
 

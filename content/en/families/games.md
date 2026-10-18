@@ -1,4 +1,9 @@
-# Games
+---
+title: "Games"
+weight: 200
+---
+
+# Games {#games}
 
 Two engines hand-ported to pure Go, one of them onto bare metal.
 

@@ -1,4 +1,9 @@
-# The map itself
+---
+title: "The map itself"
+weight: 210
+---
+
+# The map itself {#the-map-itself}
 
 The one thing this organisation does hold: the tool that generates every page here.
 

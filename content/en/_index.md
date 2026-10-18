@@ -1,4 +1,9 @@
-# The pure-Go ecosystem
+---
+title: "The ecosystem"
+weight: 10
+---
+
+# The pure-Go ecosystem {#the-pure-go-ecosystem}
 
 **297 organisations. 651 public code repositories. No C anywhere.**
 
@@ -12,7 +17,7 @@ is not a stylistic preference. It is what makes one binary cross-compile to six
 architectures, run inside a browser as WebAssembly, and boot on bare metal without
 a libc — three things a single cgo dependency takes away permanently.
 
-## How the map is organised
+## How the map is organised {#how-the-map-is-organised}
 
 **One organisation per domain, one repository per capability.** A program that
 needs an ext4 reader takes an ext4 reader, not a storage framework. This is why
@@ -25,15 +30,15 @@ is what this site is for. Before building anything, look here first: the recurri
 failure mode in an ecosystem this wide is rebuilding something that already exists
 one organisation over.
 
-## Where to start
+## Where to start {#where-to-start}
 
-- **[Find a capability](finding.md)** — a lookup from what you need to where it lives.
-- **[What every repository is held to](standards.md)** — the conformance standard, in full.
+- **[Find a capability]({{< relref "finding.md" >}})** — a lookup from what you need to where it lives.
+- **[What every repository is held to]({{< relref "standards.md" >}})** — the conformance standard, in full.
 - The 17 families, in the navigation on the left.
-- **[Ruby gems](gems.md)** — the 195 per-gem organisations, alphabetically.
-- **[Held, not yet built](reserved.md)** — the names that are held but hold nothing.
+- **[Ruby gems]({{< relref "gems.md" >}})** — the 195 per-gem organisations, alphabetically.
+- **[Held, not yet built]({{< relref "reserved.md" >}})** — the names that are held but hold nothing.
 
-## Reading a count
+## Reading a count {#reading-a-count}
 
 Every repository count on this site is the number of **public repositories that
 hold code**. The four infrastructure repositories every organisation carries —
