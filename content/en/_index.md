@@ -5,7 +5,7 @@ weight: 10
 
 # The pure-Go ecosystem {#the-pure-go-ecosystem}
 
-**297 organisations. 651 public code repositories. No C anywhere.**
+**316 organisations. 755 public code repositories. No C anywhere.**
 
 `go-desktop` holds no library. It holds the index — a way to find a capability
 without already knowing which organisation owns it — and
@@ -21,7 +21,7 @@ a libc — three things a single cgo dependency takes away permanently.
 
 **One organisation per domain, one repository per capability.** A program that
 needs an ext4 reader takes an ext4 reader, not a storage framework. This is why
-there are 297 organisations rather than a handful of monorepos: the unit of reuse
+there are 316 organisations rather than a handful of monorepos: the unit of reuse
 is the capability, and a capability that lives in its own module can be depended
 on without dragging in the rest of its family.
 
@@ -34,7 +34,7 @@ one organisation over.
 
 - **[Find a capability]({{< relref "finding.md" >}})** — a lookup from what you need to where it lives.
 - **[What every repository is held to]({{< relref "standards.md" >}})** — the conformance standard, in full.
-- The 17 families, in the navigation on the left.
+- The 18 families, in the navigation on the left.
 - **[Ruby gems]({{< relref "gems.md" >}})** — the 195 per-gem organisations, alphabetically.
 - **[Held, not yet built]({{< relref "reserved.md" >}})** — the names that are held but hold nothing.
 
