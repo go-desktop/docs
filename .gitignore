@@ -1,3 +1,13 @@
+# Hugo's build outputs. The site moved from MkDocs to Hugo + our hextra fork;
+# this file still named only MkDocs' outputs, so public/, resources/ and the
+# build lock were untracked AND unignored — one `git add -A` from committing
+# the built site.
+public/
+resources/
+.hugo_build.lock
+
+# MkDocs' outputs. The generator is gone, but a stale site/ is still sitting in
+# working copies that predate the migration; dropping these would expose it.
 /site/
 .venv/
 __pycache__/
