@@ -1,6 +1,6 @@
 ---
 title: "Held, not yet built"
-weight: 240
+weight: 260
 ---
 
 # Held, not yet built {#held-not-yet-built}
@@ -11,6 +11,7 @@ a capability is the easiest way to believe a capability exists.
 
 | Organisation | Intended for |
 | --- | --- |
+| [`go-pkgx`](https://github.com/go-pkgx) | Renamed to go-zpkg on 2026-11-09; all eight repositories were TRANSFERRED, not deleted (go-pkgx/packages answers as go-zpkg/packages, and pkgx itself as zpkgx). The name is held so the map shows a rename rather than a disappearance. |
 | [`go-graphdrawing`](https://github.com/go-graphdrawing) | Graph-drawing algorithms — Sugiyama layering, force-directed placement, trees. Measured and deliberately deferred: pgf's graphdrawing is used by 5 documents in a 10,025-talk corpus. |
 | [`go-grub`](https://github.com/go-grub) | Superseded in practice by go-bootloaders/grub. |
 | [`go-quake2`](https://github.com/go-quake2) | A Quake II engine, after go-quake1. |

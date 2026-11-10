@@ -17,7 +17,7 @@ Reading and writing the formats documents arrive in, and the engines that scan t
 | [`go-mustache`](https://github.com/go-mustache) | 1 | [site](https://go-mustache.github.io/) | [docs](https://go-mustache.github.io/docs/) | Logic-less Mustache templating, spec-faithful. |
 | [`go-liquid`](https://github.com/go-liquid) | 1 | [site](https://go-liquid.github.io/) | [docs](https://go-liquid.github.io/docs/) | Shopify's Liquid template engine, gem-faithful. |
 | [`go-rouge`](https://github.com/go-rouge) | 1 | [site](https://go-rouge.github.io/) | [docs](https://go-rouge.github.io/docs/) | A Rouge/Pygments-class syntax highlighter — per-language lexers, token types, named themes. |
-| [`go-regexp`](https://github.com/go-regexp) | 1 | [site](https://go-regexp.github.io/) | [docs](https://go-regexp.github.io/docs/) | An Onigmo engine shaped like the standard library's regexp, with the lookaround and backreferences RE2 cannot do. |
+| [`go-regexp`](https://github.com/go-regexp) | 2 | [site](https://go-regexp.github.io/) | [docs](https://go-regexp.github.io/docs/) | An Onigmo engine shaped like the standard library's regexp, with the lookaround and backreferences RE2 cannot do. |
 | [`go-datetime`](https://github.com/go-datetime) | 1 | [site](https://go-datetime.github.io/) | [docs](https://go-datetime.github.io/docs/) | A lenient parser for the dates people actually write. |
 
 Counts are public repositories that hold code; brand, docs and landing

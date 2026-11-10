@@ -1,6 +1,6 @@
 ---
 title: "News, social & feeds"
-weight: 190
+weight: 210
 ---
 
 # News, social & feeds {#news-social-feeds}
