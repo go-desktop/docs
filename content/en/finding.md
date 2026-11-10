@@ -127,7 +127,7 @@ domain, not in the repository that happens to need it first.
 
 | I need to… | Use |
 | --- | --- |
-| Install or build a package from a pkgx recipe | [`go-pkgx/pkgm`](https://github.com/go-pkgx/pkgm), [`go-pkgx/bk`](https://github.com/go-pkgx/bk) |
+| Install or build a package from a recipe | [`go-zpkg/zpkgm`](https://github.com/go-zpkg/zpkgm), [`go-zpkg/zbk`](https://github.com/go-zpkg/zbk) |
 | Produce an SBOM or sign an artifact | [`go-attest/sbom`](https://github.com/go-attest/sbom), [`go-attest/sign`](https://github.com/go-attest/sign) |
 | Compare loose or CalVer versions | [`go-versions/semver`](https://github.com/go-versions/semver) |
 | Run Ruby code | [`go-embedded-ruby/ruby`](https://github.com/go-embedded-ruby/ruby) (`rbgo`) |

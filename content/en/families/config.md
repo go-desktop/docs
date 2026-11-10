@@ -1,6 +1,6 @@
 ---
 title: "Configuration management"
-weight: 180
+weight: 200
 ---
 
 # Configuration management {#configuration-management}
