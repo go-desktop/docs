@@ -69,7 +69,16 @@ cascade:
 params:
   docs:
     version: "main"
-  description: "A map of one pure-Go ecosystem — 287 organisations and 564 public code repositories that build a desktop, typeset a document, mount a filesystem, boot a machine and run Ruby, all with CGO_ENABLED=0, on six 64-bit architectures, under a single conformance standard."
+  # ⛔ These two numbers are the ONLY ones on this site that no generator
+  # owns, and they were 287 / 564 — two refreshes stale — while the page
+  # body beside them said 324 / 812, because `catalog generate` writes
+  # content/en/ and never touches this file. Nothing regenerates it, no
+  # link check can see a number, and this string is <meta name=description>,
+  # so the stale pair was what search results and link previews showed.
+  # Raised as go-desktop/catalog#26: the read-back that already fails on a
+  # dead link in a hand-written page should fail on a stale count too.
+  # Until it does, this line is updated BY HAND at every refresh.
+  description: "A map of one pure-Go ecosystem — 324 organisations and 812 public code repositories that build a desktop, typeset a document, mount a filesystem, boot a machine and run Ruby, Julia, R and C, all with CGO_ENABLED=0, on six 64-bit architectures, under a single conformance standard."
   navbar:
     displayTitle: true
     displayLogo: false
