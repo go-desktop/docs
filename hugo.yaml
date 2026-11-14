@@ -92,5 +92,27 @@ params:
   page:
     width: normal
   editURL:
+    # ⛔ TWO DEFECTS LIVED IN THIS ONE LINE, and every "Edit this page on
+    # GitHub" link was a 404 for as long as they did.
+    #
+    # It read github.com/go-desktop/edit/main/content/en, which
+    #   1. drops the REPOSITORY segment — github.com/go-desktop/edit names a
+    #      repository that does not exist (404), where it meant
+    #      go-desktop/docs/edit/…; and
+    #   2. ends at content/en while Hextra appends the page's path relative to
+    #      content/, which already starts with en/ — so the rendered href was
+    #      …/content/en/en/finding.md, with the language doubled.
+    #
+    # Measured on the published page before the fix:
+    #   go-desktop/edit/main/content/en/en/finding.md … Edit this page on GitHub
+    #
+    # Neither was visible to anything: catalog's read-back walked .md, .html
+    # and .toml and never opened a .yaml, which is also where the stale pair of
+    # totals hid. Both are now in the walk (go-desktop/catalog#26).
+    #
+    # ⚠ The doubled en is NOT ours alone: 77 of the 100 docs repositories on
+    # this machine's canonical farm end their base at content/en, and 66 of
+    # those also drop the repository segment. Filed for the fleet separately —
+    # a sibling with the same template is not a reviewed decision.
     enable: true
-    base: "https://github.com/go-desktop/edit/main/content/en"
+    base: "https://github.com/go-desktop/docs/edit/main/content"
