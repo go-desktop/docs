@@ -78,7 +78,7 @@ params:
   # Raised as go-desktop/catalog#26: the read-back that already fails on a
   # dead link in a hand-written page should fail on a stale count too.
   # Until it does, this line is updated BY HAND at every refresh.
-  description: "A map of one pure-Go ecosystem — 324 organisations and 812 public code repositories that build a desktop, typeset a document, mount a filesystem, boot a machine and run Ruby, Julia, R and C, all with CGO_ENABLED=0, on six 64-bit architectures, under a single conformance standard."
+  description: "A map of one pure-Go ecosystem — 333 organisations and 874 public code repositories that build a desktop, typeset a document, mount a filesystem, boot a machine and run Ruby, Julia, R, C and Fortran, all with CGO_ENABLED=0, on six 64-bit architectures, under a single conformance standard."
   navbar:
     displayTitle: true
     displayLogo: false

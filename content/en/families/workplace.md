@@ -1,6 +1,6 @@
 ---
 title: "Calendaring & workplace APIs"
-weight: 190
+weight: 200
 ---
 
 # Calendaring & workplace APIs {#calendaring-workplace-apis}

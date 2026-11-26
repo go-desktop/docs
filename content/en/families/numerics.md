@@ -10,7 +10,7 @@ Getting the machine's width out of pure Go, on all six 64-bit targets — and th
 | Organisation | Repos | Site | Docs | What it holds |
 | --- | --- | --- | --- | --- |
 | [`go-asmgen`](https://github.com/go-asmgen) | 1 | [site](https://go-asmgen.github.io/) | [docs](https://go-asmgen.github.io/docs/) | Ergonomic generation of Go-compatible Plan 9 assembly for every 64-bit Go target. |
-| [`go-simd`](https://github.com/go-simd) | 23 | [site](https://go-simd.github.io/) | [docs](https://go-simd.github.io/docs/) | SIMD kernels on all six of Go's 64-bit targets — codecs, hashes, string scans, bitsets, float and int8 dot products. |
+| [`go-simd`](https://github.com/go-simd) | 26 | [site](https://go-simd.github.io/) | [docs](https://go-simd.github.io/docs/) | SIMD kernels on all six of Go's 64-bit targets — codecs, hashes, string scans, bitsets, float and int8 dot products. |
 | [`go-ndarray`](https://github.com/go-ndarray) | 1 | [site](https://go-ndarray.github.io/) | [docs](https://go-ndarray.github.io/docs/) | A numpy-shaped n-dimensional array, with GEMM at vecLib parity. |
 | [`go-fft`](https://github.com/go-fft) | 1 | [site](https://go-fft.github.io/) | [docs](https://go-fft.github.io/docs/) | Fast Fourier transforms at numpy and scipy accuracy, without FFTW. |
 | [`go-numerics`](https://github.com/go-numerics) | 3 | [site](https://go-numerics.github.io/) | [docs](https://go-numerics.github.io/docs/) | The three pieces a numerical program reaches for after the array: special functions (gamma, beta, erf, Bessel, zeta), optimisation and root finding, and quadrature with ODE solvers including the stiff ones (Radau, BDF). |
@@ -24,6 +24,7 @@ Getting the machine's width out of pure Go, on all six 64-bit targets — and th
 | [`go-notebook`](https://github.com/go-notebook) | 2 | [site](https://go-notebook.github.io/) | [docs](https://go-notebook.github.io/docs/) | Notebooks over that stack: a reactive compiled kernel that keeps its values and orders cells by what they use, and a browser playground that interprets the cells in WebAssembly while the libraries they call stay compiled. |
 | [`go-scikit`](https://github.com/go-scikit) | 3 | [site](https://go-scikit.github.io/) | [docs](https://go-scikit.github.io/docs/) | The parity programme for the stack as a whole — an inventory, a bibliography and a measured status against MATLAB and Mathematica — plus its Ruby bindings. |
 | [`go-geometry`](https://github.com/go-geometry) | 7 | [site](https://go-geometry.github.io/) | [docs](https://go-geometry.github.io/docs/) | Computational geometry ported from SciPy and Qhull: robust predicates after Shewchuk, Delaunay and Voronoi, convex hulls, k-d trees, every scipy.spatial.distance metric, and rotations with Slerp. |
+| [`go-blas`](https://github.com/go-blas) | 1 | [site](https://go-blas.github.io/) | — | BLAS and LAPACK in pure Go, with the Fortran reference signatures and column-major storage across all four precisions: SIMD GEMM on six architectures, a stated error bound, and a netlib-exact option when bit parity is what is wanted. |
 
 Counts are public repositories that hold code; brand, docs and landing
 repositories are excluded.

@@ -43,6 +43,7 @@ domain, not in the repository that happens to need it first.
 | Talk to D-Bus | `github.com/godbus/dbus/v5` — the reference library, itself CGO-free |
 | Call an Objective-C API on macOS | [`go-macos/objc`](https://github.com/go-macos/objc) |
 | Call a Win32 or WinRT API | [`go-mswin/win32`](https://github.com/go-mswin/win32), [`go-mswin/winrt`](https://github.com/go-mswin/winrt) |
+| Find `HOME`, `TMPDIR` or the DNS servers inside an Android APK | [`go-aosp/hostenv`](https://github.com/go-aosp/hostenv) — what the Java host hands a CGO-free payload |
 
 ## Graphics and text {#graphics-and-text}
 
@@ -60,6 +61,8 @@ domain, not in the repository that happens to need it first.
 | Typeset TeX, or just TeX math | [`go-tex/engine`](https://github.com/go-tex/engine), [`go-tex/math`](https://github.com/go-tex/math) |
 | Get the `.cls`/`.sty` files a document asks for | [`go-tex/texmf`](https://github.com/go-tex/texmf) |
 | Demux MP4 or Matroska | [`go-avkit/avkit`](https://github.com/go-avkit/avkit) |
+| Hash an image, a video or an audio track perceptually | [`go-perceptual/perceptual`](https://github.com/go-perceptual/perceptual) — PDQ, TMK+PDQF and Chromaprint behind one CLI |
+| Find duplicate or near-duplicate media in a tree | [`go-perceptual/dedupe`](https://github.com/go-perceptual/dedupe) — reports, never deletes |
 
 ## Documents and markup {#documents-and-markup}
 
@@ -85,6 +88,7 @@ domain, not in the repository that happens to need it first.
 | Convert a qcow2, raw, dmg or tart-oci image | [`go-diskimages`](https://github.com/go-diskimages) |
 | Call a Linux filesystem ioctl | [`go-fsctl`](https://github.com/go-fsctl) |
 | Open a LUKS or APFS volume | [`go-fde`](https://github.com/go-fde) |
+| Manage the keys that unlock an encrypted volume | [`go-theca/theca`](https://github.com/go-theca/theca), with a desktop GUI in [`go-theca/gui`](https://github.com/go-theca/gui) |
 | Compress with LZ4, LZFSE or deflate | [`go-compressions`](https://github.com/go-compressions) |
 | Transfer only what changed | [`go-deltasync`](https://github.com/go-deltasync) |
 | Split a stream into content-defined chunks | [`go-deltasync/chunk`](https://github.com/go-deltasync/chunk) — the one chunker |
@@ -99,6 +103,8 @@ domain, not in the repository that happens to need it first.
 | Measure into a PCR from UEFI | [`go-tpm2/efitcg2`](https://github.com/go-tpm2/efitcg2) |
 | Link or sign a PE32+/EFI binary | [`go-coff/peln`](https://github.com/go-coff/peln), [`go-coff/pectl`](https://github.com/go-coff/pectl) |
 | Read or patch GRUB or systemd-boot config | [`go-bootloaders`](https://github.com/go-bootloaders) |
+| Turn an ELF into a flat image, SREC, Intel HEX or uImage | [`go-binfmt/fwimg`](https://github.com/go-binfmt/fwimg) |
+| Patch an ELF's interpreter, RPATH/RUNPATH or `DT_NEEDED` | [`go-binfmt/elfpatch`](https://github.com/go-binfmt/elfpatch) — patchelf without Nix |
 
 ## Compute {#compute}
 
@@ -108,6 +114,8 @@ domain, not in the repository that happens to need it first.
 | Speed up a codec, hash or string scan with SIMD | [`go-simd`](https://github.com/go-simd) — one repository per kernel |
 | Work with n-dimensional arrays, or multiply matrices | [`go-ndarray/ndarray`](https://github.com/go-ndarray/ndarray) |
 | Take an FFT | [`go-fft/fft`](https://github.com/go-fft/fft) |
+| Call BLAS or LAPACK with the Fortran reference signatures | [`go-blas/blas`](https://github.com/go-blas/blas) — column-major, s/d/c/z, SIMD GEMM |
+| Run Fortran in a notebook cell | [`go-embedded-fortran/fortran`](https://github.com/go-embedded-fortran/fortran) |
 
 ## Distributed systems {#distributed-systems}
 
@@ -122,12 +130,21 @@ domain, not in the repository that happens to need it first.
 | Health-check a backend | [`go-net-health/health`](https://github.com/go-net-health/health) |
 | Drive a guest virtio device | [`go-virtio`](https://github.com/go-virtio) |
 | Run a microVM cloud | [`openweft/weft`](https://github.com/openweft/weft) |
+| Relay WebRTC peers through NAT, or let two of them meet | [`go-turn/turn`](https://github.com/go-turn/turn) — STUN, TURN and a rendezvous, credentials behind OIDC |
+
+## Version control {#version-control}
+
+| I need to… | Use |
+| --- | --- |
+| Host Git repositories with a web UI and admin API | [`go-vcs/forge`](https://github.com/go-vcs/forge) |
+| Speak the Git wire protocol, or read a pack file | [`go-vcs/gitproto`](https://github.com/go-vcs/gitproto) |
+| Run a GitHub Actions workflow on your own runners | [`go-vcs/actions`](https://github.com/go-vcs/actions) |
 
 ## Packaging and Ruby {#packaging-and-ruby}
 
 | I need to… | Use |
 | --- | --- |
-| Install or build a package from a recipe | [`go-zpkg/zpkgm`](https://github.com/go-zpkg/zpkgm), [`go-zpkg/zbk`](https://github.com/go-zpkg/zbk) |
+| Install or build a package from a recipe | [`go-zpkg/zpkm`](https://github.com/go-zpkg/zpkm), [`go-zpkg/zpkb`](https://github.com/go-zpkg/zpkb) |
 | Produce an SBOM or sign an artifact | [`go-attest/sbom`](https://github.com/go-attest/sbom), [`go-attest/sign`](https://github.com/go-attest/sign) |
 | Compare loose or CalVer versions | [`go-versions/semver`](https://github.com/go-versions/semver) |
 | Run Ruby code | [`go-embedded-ruby/ruby`](https://github.com/go-embedded-ruby/ruby) (`rbgo`) |
