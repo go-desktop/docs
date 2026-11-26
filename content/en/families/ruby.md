@@ -16,6 +16,7 @@ Other languages' runtimes, written in pure Go so they embed in a Go program and 
 | [`go-composites`](https://github.com/go-composites) | 31 | [site](https://go-composites.github.io/) | [docs](https://go-composites.github.io/docs/) | Ruby's numeric tower, collections, time and dates as composition-oriented building blocks: Result-based, Null-Object, never nil. |
 | [`go-ruby-widgets`](https://github.com/go-ruby-widgets) | 3 | [site](https://go-ruby-widgets.github.io/) | [docs](https://go-ruby-widgets.github.io/docs/) | MVVM, widgets and a terminal toolkit, addressable from Ruby. |
 | [`go-vet-analyzers`](https://github.com/go-vet-analyzers) | 2 | [site](https://go-vet-analyzers.github.io/) | [docs](https://go-vet-analyzers.github.io/docs/) | go vet analyzers that make the ecosystem's invariants a compile-time matter. |
+| [`go-embedded-fortran`](https://github.com/go-embedded-fortran) | 1 | [site](https://go-embedded-fortran.github.io/) | [docs](https://go-embedded-fortran.github.io/docs/) | Fortran in pure Go for go-notebook cells: an oracle harness, a front end, and the back end a measured gate decides. |
 
 Counts are public repositories that hold code; brand, docs and landing
 repositories are excluded.
